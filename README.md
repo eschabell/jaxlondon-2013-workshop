@@ -8,7 +8,7 @@ Installation
 
 Create OpenShift application
 
-    rhc app create -a jaxlondon2013 -t ruby-1.9 --from-code=https://github.com/eschabell/jaxlondon-2013-workshop.git
+    rhc app create -t ruby-1.9 --from-code=https://github.com/eschabell/jaxlondon-2013-workshop.git jaxlondon2013
 
 You can find the workshop here:
 
