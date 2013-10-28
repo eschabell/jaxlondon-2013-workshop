@@ -181,7 +181,7 @@ layout: jaxbase
     %h3 JAX London 2013 Mobile App Demo
     :markdown
       * $ rhc app create -t jbosseap-6 jaxlondon
-      * $ cd goto
+      * $ cd jaxlondon
       * $ git remote add upstream -m master git://github.com/eschabell/openshift-jaxlondon.git
       * $ git pull -s recursive -X theirs upstream master
       * $ git push
@@ -330,7 +330,7 @@ layout: jaxbase
     :markdown
       * create an OpenShift php-5.3 application
       * add a mysql cartridge.
-        * $ rhc app create php-5.3 wordpress
+        * $ rhc app create -t php-5.3 wordpress
         * $ rhc cartridge add -a blog -c mysql -p password
           * Note: save the MYSQL admin login and password!
       * cd to the app's php dir, get a copy of the wordpress software.
