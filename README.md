@@ -25,4 +25,4 @@ What is this project doing?
 Releases
 --------
 
-- none yet.
+- v1.0 - workshop as given in London, 28 Oct 2013.
