@@ -322,7 +322,7 @@ layout: jaxbase
     %h1 Lab 4
     %h3 create a Wordpress blog site hosted on OpenShift
     :markdown
-      [download Wordpress] (/wordpress-3.5.1.zip) for this lab
+      [download Wordpress] (http://presos-onthe.rhcloud.com/wordpress-3.5.1.zip) for this lab
 
   %section(data-state="" )
     .title-information
@@ -345,10 +345,10 @@ layout: jaxbase
     %h2 Wordpress blog (2/3)
     :markdown
       * Edit wp-config.php and make the following changes:
-        * define('DB_NAME', $_ENV['OPENSHIFT_APP_NAME']);
-        * define('DB_USER', $_ENV['OPENSHIFT_MYSQL_DB_USERNAME']);
-        * define('DB_PASSWORD', $_ENV['OPENSHIFT_MYSQL_DB_PASSWORD']);
-        * define('DB_HOST', $_ENV['OPENSHIFT_MYSQL_DB_HOST'] . ':' . $_ENV['OPENSHIFT_MYSQL_DB_PORT']);
+        * `define('DB_NAME', $_ENV['OPENSHIFT_APP_NAME']);`
+        * `define('DB_USER', $_ENV['OPENSHIFT_MYSQL_DB_USERNAME']);`
+        * `define('DB_PASSWORD', $_ENV['OPENSHIFT_MYSQL_DB_PASSWORD']);`
+        * `define('DB_HOST', $_ENV['OPENSHIFT_MYSQL_DB_HOST'] . ':' . $_ENV['OPENSHIFT_MYSQL_DB_PORT']);`
 
   %section(data-state="" )
     .title-information
