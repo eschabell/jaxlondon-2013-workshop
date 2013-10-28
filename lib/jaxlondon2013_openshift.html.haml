@@ -1,0 +1,498 @@
+---
+layout: jaxbase
+---
+
+.slides
+  %section(data-state="title" )
+    %h2
+
+  %section(data-state="" )
+    .title-information
+    %h2 Workshop agenda
+    :markdown
+      * First hour
+        * Taking the OpenShift tour
+      * Second hour
+        * Installation of tooling
+        * Hello OpenShift
+        * OpenShift web console
+      * Final hour
+        * OpenShift tips & tricks
+        * Java tooling
+        * Homework - advanced Java quickstarts
+
+  %section(data-state="" )
+    .title-information
+    %h2 A Little History
+    :markdown
+      * Nov 2010: Makara acquired
+      * In 2011: merged into OpenShift project
+      * May 2012: Open Sourced
+        * GitHub, liveCD, blogs, howto's, quickstarts, webinars
+      * June 2012: OpenShift State of the Union
+      * Dec 2012: OpenShift Primer (e-book)
+      * June 2013: Online Public PaaS / Enterprise Private PaaS
+      * Sep 2013: JBoss xPaaS Services for OpenShift
+
+  %section(data-state="" )
+    .title-information
+    %h2 An OpenShift Primer
+    :markdown
+      <div style="float: right">
+        <img src="/images/openshift_primer.png" />
+      </div>
+      * Amazon
+      * Barns&Nobel
+      * iTunes
+      * Developerpress.com
+
+  %section(data-state="hammers" )
+    %h2
+
+  %section(data-state="never-look" )
+    %h3.invert Never look back...
+
+  %section(data-state="dev-heaven" )
+    .title-information
+
+  %section(data-state="dorking" )
+    .title-information
+
+  %section(data-state="" )
+    .title-information
+    %h2 Quickstart
+    :markdown
+      1. Sign up
+      2. Install client tools
+      3. Create domain
+      4. Create application
+      5. Deploy application (GIT)
+
+  %section(data-state="" )
+    .title-information
+    %h2 Sign up, it's free!
+    :markdown
+      * [http://openshift.redhat.com] (http://openshift.redhat.com)
+      * Example projects you can deploy now
+        * [http://www.github.com/openshift] (http://www.github.com/openshift)
+      <div style="float: right">
+        <img height="450" width="500" src="/images/sign-up.png" />
+      </div>
+      * Help
+        * IRC freenode #openshift
+        * forums
+        * email openshift@redhat
+
+  %section(data-state="" )
+    .title-information
+    %h2 Install Client Tools
+    :markdown
+      * Fedora / RHEL
+        * openshift.repo
+        * /etc/yum.repos.d
+        * sudo yum install rubygem-rhc
+      * osX / Windows / Unix
+        * gem install rhc
+        * see forums or blogs
+        <div style="float: right">
+          <img src="/images/rhc.png" />
+        </div>
+
+  %section(data-state="" )
+    .title-information
+    %h2 Create Domain
+    :markdown
+      * use rhc command
+        * $ rhc domain create -n mydomain
+      * use admin console
+        <div style="float: right">
+          <img src="/images/domain.png" />
+        </div>
+
+  %section(data-state="webadmin" )
+    .title-information
+
+  %section(data-state="instantapps" )
+    .title-information
+
+  %section(data-state="featuredapps" )
+    .title-information
+
+  %section(data-state="createapps" )
+    .title-information
+
+  %section(data-state="readytocode" )
+    .title-information
+
+  %section(data-state="" )
+    .title-information
+    %h2 Application Details
+    :markdown
+      <div style="float: center">
+        <img src="/images/appdetails.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+    %h2 Other Options
+    :markdown
+      * name app and define type
+        * $ rhc app create -a $appname -t $apptype
+        * (Node.js, DIY, Jenkins, PHP, Ruby, Python, Perl and most important, Java!)
+        <div style="float: right">
+          <img width="500" src="/images/jbdsopenshift.png" />
+        </div>
+      * Add application to local repo
+        * $ git add .
+      * Commit changes
+        * $ git commit -m "Initial app import."
+
+  %section(data-state="" )
+    .title-information
+    %h2 Deply to Cloud
+    :markdown
+      * Push the code
+        * $ git push
+      * Congratulations, your app is in the cloud!
+      <div style="float: right">
+        <img width="700" height="550" src="/images/pushedapp.png" />
+      </div>
+
+  %section(data-state="easypeasy" )
+    .title-information
+
+  %section(data-state="gears" )
+    .title-information
+
+  %section(data-state="" )
+    .title-information
+    %h2 JBoss Developer Studio
+    :markdown
+      <div style="float: right">
+        <img src="/images/jbdsdetails.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+    %h2 Advanced Quickstarts
+
+  %section(data-state="" )
+    .title-information
+    %h3 JAX London 2013 Mobile App Demo
+    :markdown
+      * $ rhc app create -t jbosseap-6 jaxlondon
+      * $ cd goto
+      * $ git remote add upstream -m master git://github.com/eschabell/openshift-jaxlondon.git
+      * $ git pull -s recursive -X theirs upstream master
+      * $ git push
+      <div style="float: right">
+        <img src="/images/aerogear.png" />
+      </div>
+      * http://jaxlondon-$your_domain.rhcloud.com
+
+  %section(data-state="" )
+    .title-information
+    %h3 Host Awestruct Presentations
+    :markdown
+      * $ rhc app create -t ruby-1.9 --from-code git://github.com/eschabell/openshift-presos-awstruct.git presos
+      * http://presos-$your_domain.rhcloud.com
+      <div style="float: right">
+        <img src="/images/presos.png" />
+      </div>
+
+  %section(data-state="buzz" )
+    .title-information
+
+  %section(data-state="" )
+    .title-information
+    %h3 Loving Your Hammers?
+    :markdown
+      <div style="float: center">
+        <img src="/images/loving.png" />
+      </div>
+
+  %section(data-state="coffee" )
+    .title-information
+
+  %section(data-state="" )
+    .title-information
+    %h2 Second hour labs
+    :markdown
+      * Installation of tooling
+      * Hello OpenShift
+      * OpenShift web console
+
+  %section(data-state="" )
+    .title-information
+    %h2 Intermezzo
+    :markdown
+      * A bit about OpenShift URL's
+      * newly created app is DNS entry based on:
+        * APPNAME, NAMESPACE, & DOMAIN (rhcloud.com)
+        * http://$APPNAME-$NAMESPACE.rhcloud.com
+
+  %section(data-state="" )
+    .title-information
+    %h2 Lab 1
+    %h3 get rhc tooling installed
+
+  %section(data-state="" )
+    .title-information
+    %h2 Linux / Mac OS X install
+    :markdown
+      * Require Ruby & GIT installation.
+      * Use shell to install RHC
+        * $ sudo gem install rhc
+        * will prompt for ssh keys, namespace, username
+
+  %section(data-state="" )
+    .title-information
+    %h2 Windows install (1/3)
+    :markdown
+      * RubyInstaller 1.9 required (rubyinstaller.org/downloads)
+        * during install accept s
+        * mandatory to select the "Add Ruby executables to your PATH" check box
+          * allows to run CLI Ruby
+        * test Ruby install
+          * C:\Program Files\> ruby -e 'puts "Welcome to Ruby"'
+            * should print "Welcome to Ruby", otherwise reinstall
+
+  %section(data-state="" )
+    .title-information
+    %h2 Windows install (2/3)
+    :markdown
+      * Git for Windows required (msysgit.github.com)
+        * ensure git added to PATH
+          * C:\Program Files\> git --version
+          * should print git version, otherwise add to PATH
+
+  %section(data-state="" )
+    .title-information
+    %h2 Windows install (3/3)
+    :markdown
+      * Install OpenShift Gem
+        * C:\Program Files\> gem install rhc
+      * Verify installation
+        * C:\Program Files\> rhc
+        * starts setup wizard
+
+  %section(data-state="" )
+    .title-information
+    %h1 Lab 2
+    %h3 become familiar with Openshift CLI
+
+  %section(data-state="" )
+    .title-information
+    %h2 Hello OpenShift
+    :markdown
+      * Create PHP application
+        * $ rhc app create myphp php-5.3
+      * view application: http://myphp-$domain.rhcloud.com
+      * edit app code:
+        * $ cd myphp
+        * $ vim php/index.html
+      * push changes:
+        * $ git commit -am "Changed code."
+        * $ git push
+      * view application changes: http://myphp-$domain.rhcloud.com
+
+  %section(data-state="" )
+    .title-information
+    %h1 Lab 3
+    %h3 become familiar with Web Console
+
+  %section(data-state="" )
+    .title-information
+    %h3 OpenShift Console sign up!
+    :markdown
+      [http://openshift.redhat.com] (http://openshift.redhat.com)
+      <div style="float: right">
+        <img height="430" width="500" src="/images/sign-up.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+    %h2 Web Console
+    :markdown
+      * This is a free form lab so poke around the console and you'll see it provides a nice way to manage your applications and account.
+      * Try Lab 4 from console.
+
+  %section(data-state="" )
+    .title-information
+    %h1 Lab 4
+    %h3 create a Wordpress blog site hosted on OpenShift
+    :markdown
+      [download Wordpress] (/wordpress-3.5.1.zip) for this lab
+
+  %section(data-state="" )
+    .title-information
+    %h2 Wordpress blog (1/3)
+    :markdown
+      * create an OpenShift php-5.3 application
+      * add a mysql cartridge.
+        * $ rhc app create php-5.3 wordpress
+        * $ rhc cartridge add -a blog -c mysql -p password
+          * Note: save the MYSQL admin login and password!
+      * cd to the app's php dir, get a copy of the wordpress software.
+        * $ cp WordPress_Download_Dir/wordpress-3.5.1.zip .
+      * unzip the wordpress code into this directory
+        * $ unzip wordpress-3.5.1.zip
+        * $ cd wordpress
+        * $ cp wp-config-sample.php wp-config.php
+
+  %section(data-state="" )
+    .title-information
+    %h2 Wordpress blog (2/3)
+    :markdown
+      * Edit wp-config.php and make the following changes:
+        * define('DB_NAME', $_ENV['OPENSHIFT_APP_NAME']);
+        * define('DB_USER', $_ENV['OPENSHIFT_MYSQL_DB_USERNAME']);
+        * define('DB_PASSWORD', $_ENV['OPENSHIFT_MYSQL_DB_PASSWORD']);
+        * define('DB_HOST', $_ENV['OPENSHIFT_MYSQL_DB_HOST'] . ':' . $_ENV['OPENSHIFT_MYSQL_DB_PORT']);
+
+  %section(data-state="" )
+    .title-information
+    %h2 Wordpress blog (3/3)
+    :markdown
+      * Change up to the top-level directory for this app
+      * Now add, commit and push the new files using git.
+        * $ git add php/wordpress
+        * $ git commit -a -m "some message"
+        * $ git push
+      * In web browser, visit app's wp-admin/install.php page.
+        * Example: http://wordpress-$domain.rhcloud.com/wordpress/wp-admin/install.php
+        * Answer the questions and wordpress should start.
+
+  %section(data-state="coffee" )
+    .title-information
+
+  %section(data-state="" )
+    .title-information
+    %h2 Final hour
+    :markdown
+      * OpenShift tips & tricks
+      * Java tooling
+      * Homework - advanced Java quickstarts
+
+  %section(data-state="" )
+    .title-information
+    %h1 Lab 5
+    %h3 learn where to setup OpenShift configuration
+
+  %section(data-state="" )
+    .title-information
+    %h2 Tips & Tricks - express.conf
+    :markdown
+      * Located in your home directory, look for .openshift/express.conf
+      * can adjust or set variables:
+        * _rhlogin - helpful for multiple logins
+        * libra_server - point to your private or public cloud
+
+  %section(data-state="" )
+    .title-information
+    %h1 Lab 6
+    %h3 explore your OpenShift gear
+
+  %section(data-state="" )
+    .title-information
+    %h2 Tips & Tricks - ssh scavenger hunt
+    :markdown
+      * Choose an app that you've created. What public IP address is using? (hint: host or dig)
+      * Use web console or CLI tools, find ssh login for an app. (hint: rhc domain show)
+      * Now, ssh into the application. What is your home directory? (hint: pwd)
+      * Try to list all home directories. (hint: ls)
+      * What private IP addresses is your app using? (hint: env)
+      * How much memory is this app using? (hint: oo-cgroup-read memory.usage_in_bytes)
+      * Stop your app and check the memory usage (hint: ctl_app graceful-stop)
+      * Restart your app (hint: ctl_app start)
+
+  %section(data-state="" )
+    .title-information
+    %h1 Lab 7
+    %h3 create & deploy app with JBDS
+
+  %section(data-state="" )
+    .title-information
+    %h3 JBDS & OpenShift (1/2)
+    :markdown
+      * Overview:
+        * install JBoss Dev Studio
+        * Create a JBDS Project
+        * Create an OpenShift Application
+        * Link the two together
+        * Publish (push) your application to OpenShift
+
+  %section(data-state="" )
+    .title-information
+    %h3 JBDS & OpenShift (2/2)
+    :markdown
+      * Detailed setup:
+        * Start JBDS. In Project Examples Tab open JBoss Quickstarts tab,  choose kitchensink, helloworld or greeter example.
+        * Create OpenShift Application from JBoss Central tab (use a jbosseap cartridge).
+        * Uncheck create a new project and browse for an existing JBDS project.
+        * When this wizard finishes an OpenShift app was created but your local contents have not been published.
+        * Open the Server tab near the bottom and expand your OpenShift application.
+        * Right click on your project and choose 'full publish'.
+        * The first publish will take some time for the maven artifacts to be downloaded.
+        * Now make some changes to the app and republish
+
+  %section(data-state="" )
+    .title-information
+    %h1 Lab 8
+    %h3 homework - advanced Java quickstarts
+
+  %section(data-state="" )
+    .title-information
+    %h3 jBPM Migration Project Demo
+    :markdown
+      * $ rhc app create -t jbossas-7 --from-code git://github.com/eschabell/openshift-jbpmmigration.git jbpmmigration
+      * http://jbpmmigration-$your_domain.rhcloud.com/jbpmmigration_upload-0.5
+      <div style="float: right">
+        <img src="/images/jbpmmigration.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+    %h3 Drools (Opta) Planner Demo
+    :markdown
+      * $ rhc app create -t jbosseap-6 --from-code git://github.com/eschabell/openshift-droolsplanner.git droolsplanner
+      * http://droolsplanner-$your_domain.rhcloud.com/droolsplanner
+      <div style="float: right">
+        <img width="400" height="100" src="/images/optaPlannerLogo.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+    %h3 Business Activity Monitoring
+    :markdown
+      * $ rhc app create -t jbossas-7 --from-code git://github.com/eschabell/openshift-bpm-bam-dashboard.git bam
+      * Setup user login:
+        * $ rhc app show bam
+        * $ scp bampreview/.openshift/config/bam-*.properties xxxxxxxxxx@bam-inthe.rhcloud.com:~/jbossas/standalone/configuration/
+      * http://bam-$your_domain.rhcloud.com  (u:erics/p:erics)
+      <div style="float: right">
+        <img width="400" height="150" src="/images/bam.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+    %h3 JBoss BPM v6 Process Designer
+    :markdown
+      * $ rhc app create -t jbossas-7 --from-code git://github.com/eschabell/openshift-bpm-process-designer.git designer
+      * http://designer-$your_domain.rhcloud.com ( u: erics / p: erics )
+      <div style="float: right">
+        <img width="900" src="/images/designer.png" />
+      </div>
+
+  %section(data-state="" )
+    .title-information
+    :markdown
+      <div style="float: left">
+        <img height="100" width="700" src="/images/references.jpg" />
+      </div>
+      * <font size="5">__OpenShift Primer Workshop__ - [_http://presos-onthe.rhcloud.com_] (http://presos-onthe.rhcloud.com)</font>
+      * <font size="5">__OpenShift__ - [_http://openshift.redhat.com_] (http://openshift.redhat.com)</font>
+      * <font size="5">__Blogs__ - [_https://www.redhat.com/openshift/community/blogs_] (https://www.redhat.com/openshift/community/blogs)</font>
+      * <font size="5">__Repository for all OpenShift demos shown here__ - [_https://github.com/eschabell_] (https://github.com/eschabell)</font>
+      * <font size="5">__OpenShift demo repository__ - [_https://github.com/openshift_] (https://github.com/openshift)</font>
+      * <font size="5">__Rise above the Cloud hype with OpenShift__ - [_http://www.schabell.org/2012/12/openshift-primer-book-published-amazon-ibooks.html_] (http://www.schabell.org/2012/12/openshift-primer-book-published-amazon-ibooks.html)</font>
