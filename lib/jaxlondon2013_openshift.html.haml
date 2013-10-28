@@ -188,14 +188,14 @@ layout: jaxbase
       <div style="float: right">
         <img src="/images/aerogear.png" />
       </div>
-      * http://jaxlondon-$your_domain.rhcloud.com
+      * `http://jaxlondon-$your_domain.rhcloud.com`
 
   %section(data-state="" )
     .title-information
     %h3 Host Awestruct Presentations
     :markdown
       * $ rhc app create -t ruby-1.9 --from-code git://github.com/eschabell/openshift-presos-awstruct.git presos
-      * http://presos-$your_domain.rhcloud.com
+      * `http://presos-$your_domain.rhcloud.com`
       <div style="float: right">
         <img src="/images/presos.png" />
       </div>
@@ -334,7 +334,7 @@ layout: jaxbase
         * $ rhc cartridge add -a blog -c mysql -p password
           * Note: save the MYSQL admin login and password!
       * cd to the app's php dir, get a copy of the wordpress software.
-        * $ cp WordPress_Download_Dir/wordpress-3.5.1.zip .
+        * `$ cp WordPress_Download_Dir/wordpress-3.5.1.zip .`
       * unzip the wordpress code into this directory
         * $ unzip wordpress-3.5.1.zip
         * $ cd wordpress
@@ -385,8 +385,8 @@ layout: jaxbase
     :markdown
       * Located in your home directory, look for .openshift/express.conf
       * can adjust or set variables:
-        * _rhlogin - helpful for multiple logins
-        * libra_server - point to your private or public cloud
+        * `default_rhlogin - helpful for multiple logins`
+        * `libra_server - point to your private or public cloud`
 
   %section(data-state="" )
     .title-information
@@ -402,9 +402,9 @@ layout: jaxbase
       * Now, ssh into the application. What is your home directory? (hint: pwd)
       * Try to list all home directories. (hint: ls)
       * What private IP addresses is your app using? (hint: env)
-      * How much memory is this app using? (hint: oo-cgroup-read memory.usage_in_bytes)
-      * Stop your app and check the memory usage (hint: ctl_app graceful-stop)
-      * Restart your app (hint: ctl_app start)
+      * `How much memory is this app using? (hint: oo-cgroup-read memory.usage_in_bytes)i`
+      * `Stop your app and check the memory usage (hint: ctl_app graceful-stop)`
+      * `Restart your app (hint: ctl_app start)`
 
   %section(data-state="" )
     .title-information
@@ -446,7 +446,7 @@ layout: jaxbase
     %h3 jBPM Migration Project Demo
     :markdown
       * $ rhc app create -t jbossas-7 --from-code git://github.com/eschabell/openshift-jbpmmigration.git jbpmmigration
-      * http://jbpmmigration-$your_domain.rhcloud.com/jbpmmigration_upload-0.5
+      * `http://jbpmmigration-$your_domain.rhcloud.com/jbpmmigration_upload-0.5`
       <div style="float: right">
         <img src="/images/jbpmmigration.png" />
       </div>
@@ -456,7 +456,7 @@ layout: jaxbase
     %h3 Drools (Opta) Planner Demo
     :markdown
       * $ rhc app create -t jbosseap-6 --from-code git://github.com/eschabell/openshift-droolsplanner.git droolsplanner
-      * http://droolsplanner-$your_domain.rhcloud.com/droolsplanner
+      * `http://droolsplanner-$your_domain.rhcloud.com/droolsplanner`
       <div style="float: right">
         <img width="400" height="100" src="/images/optaPlannerLogo.png" />
       </div>
@@ -469,7 +469,7 @@ layout: jaxbase
       * Setup user login:
         * $ rhc app show bam
         * $ scp bampreview/.openshift/config/bam-*.properties xxxxxxxxxx@bam-inthe.rhcloud.com:~/jbossas/standalone/configuration/
-      * http://bam-$your_domain.rhcloud.com  (u:erics/p:erics)
+      * `http://bam-$your_domain.rhcloud.com  (u:erics/p:erics)`
       <div style="float: right">
         <img width="400" height="150" src="/images/bam.png" />
       </div>
@@ -479,7 +479,7 @@ layout: jaxbase
     %h3 JBoss BPM v6 Process Designer
     :markdown
       * $ rhc app create -t jbossas-7 --from-code git://github.com/eschabell/openshift-bpm-process-designer.git designer
-      * http://designer-$your_domain.rhcloud.com ( u: erics / p: erics )
+      * `http://designer-$your_domain.rhcloud.com ( u: erics / p: erics )`
       <div style="float: right">
         <img width="900" src="/images/designer.png" />
       </div>
