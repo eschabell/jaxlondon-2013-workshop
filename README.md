@@ -1,3 +1,6 @@
+Update: June 2018 moved to [Gitlab](https://gitlab.com/eschabell/jaxlondon-2013-workshop)
+
+
 Hosting JAX London 2013 workshop on Awestruct in OpenShift
 ==========================================================
 This will give you an empty ruby instance on OpenShift for hosting the workshop on an Awestruct site.
